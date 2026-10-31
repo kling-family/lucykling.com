@@ -44,12 +44,12 @@
   h1 { font-family: "Pacifico", cursive; font-weight: 400; font-size: clamp(5rem, 20vw, 9.5rem); line-height: 1.25; margin: 0; color: var(--pink); }
   .tag { margin: 34px 0 0; font-size: 1.6rem; font-weight: 600; }
   .sparkles { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
-  .scene { display: block; width: 100%; max-width: 680px; height: auto; margin: 0 auto -30px; position: relative; z-index: 1; }
+  .scene { display: block; width: 100%; max-width: 680px; height: auto; margin: 0 auto -54px; position: relative; z-index: 1; }
   .cloudbed { display: block; width: 100%; height: 90px; position: relative; z-index: 2; }
   @media (min-width: 900px) {
     header { min-height: 470px; }
     header .wrap { padding-top: 52px; }
-    .scene { position: absolute; right: 2%; bottom: 80px; width: 60%; max-width: 700px; margin: 0; }
+    .scene { position: absolute; right: 2%; bottom: 36px; width: 60%; max-width: 700px; margin: 0; }
     .cloudbed { position: absolute; left: 0; right: 0; bottom: 0; }
   }
 
@@ -101,7 +101,7 @@
       <h1>Lucy</h1>
       <p class="tag">Welcome to my castle</p>
     </div>
-      <svg class="scene" viewBox="70 150 490 232" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+      <svg class="scene" viewBox="70 150 490 252" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
         <defs><g id="castle">
     <rect x="20" y="70" width="160" height="110" fill="#F6E6FF"/>
     <rect x="0" y="40" width="44" height="140" fill="#E9CCFA"/><rect x="156" y="40" width="44" height="140" fill="#E9CCFA"/>
@@ -147,8 +147,12 @@
         </g>
         <use href="#castle" transform="translate(370 230) scale(.78)"/>
         <use href="#uni" transform="translate(96 252) scale(.78)"/>
+        <g fill="#fff">
+          <ellipse cx="195" cy="402" rx="112" ry="26"/><ellipse cx="150" cy="396" rx="56" ry="22"/><ellipse cx="240" cy="394" rx="60" ry="24"/>
+          <ellipse cx="455" cy="402" rx="100" ry="26"/><ellipse cx="400" cy="394" rx="52" ry="22"/><ellipse cx="505" cy="394" rx="50" ry="24"/>
+        </g>
       </svg>
-    <svg class="cloudbed" viewBox="0 0 1200 110" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><g fill="#fff"><ellipse cx="90" cy="96" rx="170" ry="58"/><ellipse cx="330" cy="104" rx="200" ry="56"/><ellipse cx="600" cy="92" rx="190" ry="60"/><ellipse cx="860" cy="102" rx="200" ry="58"/><ellipse cx="1110" cy="94" rx="180" ry="60"/><rect x="0" y="96" width="1200" height="14"/></g></svg>
+    <svg class="cloudbed" viewBox="0 0 1200 110" preserveAspectRatio="none" aria-hidden="true"><g fill="#fff"><ellipse cx="90" cy="96" rx="170" ry="58"/><ellipse cx="330" cy="104" rx="200" ry="56"/><ellipse cx="600" cy="92" rx="190" ry="60"/><ellipse cx="860" cy="102" rx="200" ry="58"/><ellipse cx="1110" cy="94" rx="180" ry="60"/><rect x="0" y="96" width="1200" height="14"/></g></svg>
   </header>
 
   <main class="wrap">
